@@ -72,5 +72,8 @@ list1位置0处的百分位数为： 1.0
 我们用matplotlib辅助之。
 箱型图的具体绘制可见[经典数据集](经典数据集.md)鸢尾花部分。
 ## 5.直方图（histogram）和散点图
-用matplotlib.pyplot中的hist函数绘制直方图,用scatter、plot函数绘制散点图，此外，mpl_toolkit.mplot3d提供
+用matplotlib.pyplot中的hist函数绘制直方图，直方图表示连续数据的分布，它将连续值域划分为一系列箱（bin）或间隔，并对其中出现的值进行计数,用scatter、plot函数绘制散点图，此外，mpl_toolkit.mplot3d提供scatter或者scatter3D可绘制三维散点图，关于二者，亦可以从[经典数据集](经典数据集.md)鸢尾花部分查看源码。
+## 6.离群点（outlier）和缺失值(missing)
+对于缺失值的处理，有三种方法，一是直接删除有缺失值的对象，二是用可能值插补缺失值，如：均值插补，利用同类均值插补，极大似然估计和多重插补，第三十忽略缺失值。
+
 
